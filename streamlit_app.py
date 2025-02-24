@@ -165,6 +165,32 @@ st.markdown("""
     padding: 10px !important;
     text-align: center !important;
 }
+
+            
+        /* Mobile Specific Fixes */
+    @media screen and (max-width: 768px) {
+        [data-testid="stAppViewContainer"] {
+            background-color: #F5EFFF !important;
+        }
+
+        /* Ensure all text remains visible */
+        body, p, span, label {
+            color: #2B1B58 !important;
+        }
+
+        /* Reduce Sidebar Size */
+        [data-testid="stSidebar"] {
+            font-size: 16px !important;
+        }
+
+        /* Improve Button Visibility */
+        button {
+            background-color: #5E3A9B !important;
+            color: white !important;
+            font-size: 16px !important;
+            font-weight: bold !important;
+        }
+        }      
     </style>
 """, unsafe_allow_html=True)
 
