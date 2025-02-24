@@ -173,6 +173,22 @@ st.markdown("""
             background-color: #F5EFFF !important;
         }
 
+        /* Beautiful Names of Allah Text Fix */
+    h2, h3, h4, h5, h6, p {
+        color: #2B1B58 !important; /* Dark Purple for Readability */
+        font-weight: bold !important;
+    }
+
+    /* If the text is inside a specific div */
+    div:has(> h2) {
+        color: #2B1B58 !important;
+    }
+
+    /* Forcefully fix specific section if needed */
+    [data-testid="stAppViewContainer"] h2 {
+        color: #2B1B58 !important;
+    }
+
         /* Ensure all text remains visible */
         body, p, span, label {
             color: #2B1B58 !important;
